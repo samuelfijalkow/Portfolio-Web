@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Samuel Fijalkow</title>
+    <link href="page1.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,400,600,700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b656461ec0.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <canvas id="background"></canvas>
+
+    <div class="logo">
+      <h1>Fijalkow</h1>
+      <h2>Samuel</h2>
+    </div>
+
+    <div class="container">
+      <div
+        class="card"
+        id="projects"
+        onclick="scrollToSection('projects-content')"
+      >
+        <div class="card-inner">
+          <p>03</p>
+          <span>Projets</span>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        id="skills"
+        onclick="scrollToSection('parcours-stack-content')"
+      >
+        <div class="card-inner">
+          <i class="fas fa-book"></i>
+          <span>Compétences</span>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        id="contact"
+        onclick="scrollToSection('contact-content')"
+      >
+        <div class="card-inner">
+          <i class="fab fa-linkedin-in"></i>
+          <span>Contact</span>
+        </div>
+      </div>
+
+      <div class="card" id="me" onclick="scrollToSection('me-content')">
+        <div class="card-inner">
+          <i class="fa-solid fa-user"></i>
+          <span>Moi</span>
+        </div>
+      </div>
+
+      <div
+        class="card"
+        id="exp"
+        onclick="scrollToSection('parcours-stack-content')"
+      >
+        <div class="card-inner">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Expérience</span>
+        </div>
+      </div>
+
+      <div class="card" id="hob" onclick="scrollToSection('me-content')">
+        <div class="card-inner">
+          <i class="fa-solid fa-basketball"></i>
+          <span>Loisirs</span>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="projects-content" class="page-section">
+      <div class="section-title reveal">
+        <h1>// 01. Projets</h1>
+        <p>Mon parcours professionnel, académique et technique.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-details">
+            <h2>Projet Personnel - Grid Dev Site</h2>
+            <p>
+              Conception et développement d'un portfolio minimaliste en une
+              seule page pour présenter mes projets et compétences. Le design
+              actuel est basé sur ce premier concept.
+            </p>
+            <span class="tech-stack">HTML, CSS Grid, Vanilla JS, Figma</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 - 2025</div>
+          <div class="timeline-details">
+            <h2>Développeur Front-End - Stage</h2>
+            <p>
+              Co-Refonte graphique du site aerocoptere albi basé en
+              **wordpress**.
+            </p>
+            <span class="tech-stack">WordPress</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 - 2024</div>
+          <div class="timeline-details">
+            <h2>Refonte graphique - Mission</h2>
+            <p>
+              Refonte graphique du site ajl basé en **html** et **css** ainsi
+              qu'un peu de **JavaScript**.
+            </p>
+            <span class="tech-stack">HTML, CSS Grid, Vanilla JS, Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours-stack-content" class="page-section">
+      <div class="section-title reveal">
+        <h1>
+          // 02. Expériences && <span class="multicolore">Compétences</span>
+        </h1>
+        <p>Mon historique professionnel et mon expertise technique.</p>
+      </div>
+
+      <div class="double-track-wrapper">
+        <div class="timeline-column no-line">
+          <h2 class="reveal">Expériences en milieu professionnel</h2>
+
+          <div class="timeline-item no-line-item reveal">
+            <div class="timeline-icon">
+              <i class="fas fa-basketball-ball"></i>
+            </div>
+            <div class="timeline-details">
+              <h3>Coach Sportif équipe universitaire</h3>
+              <p>
+                Organisation et animation des entraînements, Développement
+                esprit d'équipe et stratégie de jeux.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item no-line-item reveal">
+            <div class="timeline-icon"><i class="fas fa-university"></i></div>
+            <div class="timeline-details">
+              <h3>Assistant aux inscriptions universitaires – Albi</h3>
+              <p>
+                Participation à la gestion et au suivi des inscriptions
+                pédagogiques. Accueil et accompagnement des étudiants.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item no-line-item reveal">
+            <div class="timeline-icon"><i class="fas fa-landmark"></i></div>
+            <div class="timeline-details">
+              <h3>Employé au Musée Toulouse-Lautrec, Albi</h3>
+              <p>
+                Accueil et renseignement du public. Surveillance et maintenance
+                des salles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-column">
+          <h2 class="reveal">Stack Technique & Outils</h2>
+          <div class="tech-stack-grid reveal">
+            <span class="tech-tag code">HTML</span>
+            <span class="tech-tag code">CSS</span>
+            <span class="tech-tag code">JS</span>
+            <span class="tech-tag language">Python</span>
+            <span class="tech-tag language">Java</span>
+            <span class="tech-tag backend">SQL</span>
+            <span class="tech-tag devops">Docker</span>
+            <span class="tech-tag language">OCaml</span>
+            <span class="tech-tag devops">Git</span>
+            <span class="tech-tag backend">ExpressJS</span>
+            <span class="tech-tag design">Figma</span>
+            <span class="tech-tag backend">NodeJS</span>
+            <span class="tech-tag devops">npm</span>
+            <span class="tech-tag code">Typescript</span>
+            <span class="tech-tag design">WordPress</span>
+          </div>
+
+          <h2 class="reveal">Soft Skills</h2>
+          <ul class="soft-skills-list reveal">
+            <li>Sens de l'organisation et de la rigueur</li>
+            <li>Capacité d'adaptation et d'autonomie</li>
+            <li>Bonne communication et aisance relationnelle</li>
+            <li>Langue: Français, Anglais</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="me-content" class="page-section">
+      <div class="section-title reveal">
+        <h1 style="color: var(--color-yellow)">// 03. MOI</h1>
+        <p>Un peu plus de ma personnalité ainsi que mes passions</p>
+      </div>
+
+      <div class="me-container">
+        <div class="bio-column reveal">
+          <div class="bio-photo-wrapper">
+            <img src="ab.png" alt="Photo de profil" class="bio-photo" />
+          </div>
+
+          <div class="bio-content">
+            <h3 class="bio-heading" style="color: var(--color-yellow)">
+              Qui suis-je ?
+            </h3>
+            <p class="bio-quote">
+              Je m’appelle Samuel.<br>
+              Je conçois des expériences web où précision technique et sens du design vont de pair.<br>
+              <br>
+              Entre développement, Figma et inspirations venues de la mode, du basket et de la culture pop-rap, je crée des interfaces claires, vivantes et impactantes, avec une approche humaine et positive.
+            </p>
+          </div>
+        </div>
+
+      <div class="hobbies-column reveal">
+  
+  <div class="jumbotron-container">
+      <div class="jumbo-scene">
+          <div class="jumbo-cube">
+              <div class="jumbo-screen screen-front">
+                  <div class="screen-bg"><img src="output-onlinegiftools.gif" alt=""></div>
+                  <div class="screen-content">
+                      <h2 style="color: var(--color-yellow);">Lecture</h2>
+                      <span style="border-color: var(--color-yellow);">MANGA</span>
+                  </div>
+              </div>
+              <div class="jumbo-screen screen-back">
+                  <div class="screen-bg"><img src="Tenor-unscreen.gif" alt=""></div>
+                  <div class="screen-content">
+                      <h2 style="color: var(--color-pink);">POP-RAP</h2>
+                      <span style="border-color: var(--color-pink);">MUSIQUE</span>
+                  </div>
+              </div>
+              <div class="jumbo-screen screen-right">
+                  <div class="screen-bg"><img src="basket.gif" alt=""></div>
+                  <div class="screen-content">
+                      <h2 style="color: var(--color-blue);">BASKET</h2>
+                      <span style="border-color: var(--color-blue);">SPORT</span>
+                  </div>
+              </div>
+              <div class="jumbo-screen screen-left">
+                  <div class="screen-bg"><img src="" alt=""></div>
+                  <div class="screen-content">
+                      <h2 style="color: var(--color-cyan);">HOBBIES</h2>
+                      <span style="border-color: var(--color-cyan);">PASSIONS</span>
+                  </div>
+              </div>
+              
+              <div class="jumbo-lid lid-top"></div>
+          </div>
+      </div>
+      
+      <div class="hologram-beam"></div>
+  </div>
+
+  <div class="slider-3d-wrapper hologram-mode">
+    <div class="slider-3d-carousel">
+      <div class="slider-item item-manga">
+        <img src="Tenor-unscreen.gif" alt="Manga" />
+      </div>
+      <div class="slider-item item-basket">
+        <img src="basket.gif" alt="Basket" />
+      </div>
+      <div class="slider-item item-music">
+        <img src="output-onlinegiftools.gif" alt="Musique" />
+      </div>
+    </div>
+    <div class="hologram-base"></div>
+  </div>
+
+</div>
+
+              
+
+    </section>
+
+    <section id="contact-content" class="page-section">
+      <div class="section-title">
+        <h1 style="color: var(--color-dark)">// 05. Contact</h1>
+      </div>
+      <div class="contact-wrapper">
+        <p>Vous avez un projet en tête ou juste envie de dire bonjour ?</p>
+        <a href="mailto:fijalkowsamuel@gmail.com" class="contact-btn"
+          >Me contacter</a
+        >
+        <div style="margin-top: 30px; font-size: 24px">
+          <a href="#" style="color: #333; margin: 0 10px"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/samuelfijalkow" style="color: #333; margin: 0 10px"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. PARTICLES ANIMATION
+        const canvas = document.getElementById("background");
+        if (canvas) {
+          const ctx = canvas.getContext("2d");
+          let width, height;
+
+          function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+          }
+          window.addEventListener("resize", resizeCanvas);
+          resizeCanvas();
+
+          const particles = [];
+          const numParticles = window.innerWidth < 768 ? 35 : 100;
+
+          class Particle {
+            constructor() {
+              this.reset();
+            }
+            reset() {
+              this.x = Math.random() * width;
+              this.y = Math.random() * height;
+              this.r = Math.random() * 2 + 0.5;
+              this.dx = (Math.random() - 0.5) * 0.5;
+              this.dy = (Math.random() - 0.5) * 0.5;
+              this.opacity = Math.random() * 0.5 + 0.1;
+              this.color = Math.random() > 0.5 ? "#000" : "#888";
+            }
+            update() {
+              this.x += this.dx;
+              this.y += this.dy;
+              if (this.x < 0 || this.x > width) this.dx *= -1;
+              if (this.y < 0 || this.y > height) this.dy *= -1;
+            }
+            draw() {
+              ctx.beginPath();
+              ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+              ctx.fillStyle = this.color;
+              ctx.globalAlpha = this.opacity;
+              ctx.fill();
+              ctx.globalAlpha = 1;
+            }
+          }
+
+          for (let i = 0; i < numParticles; i++) {
+            particles.push(new Particle());
+          }
+
+          function animate() {
+            ctx.clearRect(0, 0, width, height);
+            particles.forEach((p) => {
+              p.update();
+              p.draw();
+            });
+            particles.forEach((p1, i) => {
+              particles.slice(i + 1).forEach((p2) => {
+                const dx = p1.x - p2.x;
+                const dy = p1.y - p2.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 100) {
+                  ctx.beginPath();
+                  ctx.strokeStyle = `rgba(0,0,0,${0.1 - dist / 1000})`;
+                  ctx.lineWidth = 0.5;
+                  ctx.moveTo(p1.x, p1.y);
+                  ctx.lineTo(p2.x, p2.y);
+                  ctx.stroke();
+                }
+              });
+            });
+            requestAnimationFrame(animate);
+          }
+          animate();
+        }
+
+        // 2. SCROLL REVEAL
+        const revealElements = document.querySelectorAll(".reveal");
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+              }
+            });
+          },
+          {
+            root: null,
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px",
+          }
+        );
+        revealElements.forEach((el) => revealObserver.observe(el));
+      });
+
+      function scrollToSection(sectionId) {
+        const targetElement = document.getElementById(sectionId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
