@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <canvas id="background"></canvas>
+    <canvas id="background" aria-hidden="true"></canvas>
 
     <div class="logo">
       <h1>Fijalkow</h1>
@@ -82,27 +82,43 @@
           <span>Loisirs</span>
         </div>
       </div>
-    </div>
 
+      <div class="card" id="lab" onclick="scrollToSection('Crea-content')">
+        <div class="card-inner">
+          <i class="fa-solid fa-flask"></i>
+          <span>Lab</span>
+        </div>
+      </div>
+    </div>
 
     <section id="projects-content" class="page-section">
       <div class="section-title reveal">
         <h1>// 01. Projets</h1>
-        <p>Mon parcours professionnel, académique et technique.</p>
+        <p>Mon parcours pré professionnel, académique et technique.</p>
       </div>
 
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
+          <div class="timeline-date">2025 - 2026</div>
           <div class="timeline-details">
-            <h2>Projet Personnel - Grid Dev Site</h2>
+            <h2>Développeur Front-End - Portfolio</h2>
             <p>
-              Conception et développement d'un portfolio minimaliste en une
-              seule page pour présenter mes projets et compétences. Le design
-              actuel est basé sur ce premier concept.
+              Conception et développement d'un portfolio animé pour présenter
+              mes projets et compétences. Vous vous trouvez sur ce magnifique
+              portfolio.
             </p>
-            <span class="tech-stack">HTML, CSS Grid, Vanilla JS, Figma</span>
+            <span class="tech-stack">HTML, CSS, JavaScript, Figma</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 - 2026</div>
+          <div class="timeline-details">
+            <h2>Développeur Front-End - Stage</h2>
+            <p>Création graphique et design du site StudioHey.</p>
+            <span class="tech-stack">WordPress, Elementor, Figma</span>
           </div>
         </div>
 
@@ -110,25 +126,12 @@
           <div class="timeline-dot"></div>
           <div class="timeline-date">2025 - 2025</div>
           <div class="timeline-details">
-            <h2>Développeur Front-End - Stage</h2>
-            <p>
-              Co-Refonte graphique du site aerocoptere albi basé en
-              **wordpress**.
-            </p>
-            <span class="tech-stack">WordPress</span>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024 - 2024</div>
-          <div class="timeline-details">
             <h2>Refonte graphique - Mission</h2>
             <p>
-              Refonte graphique du site ajl basé en **html** et **css** ainsi
-              qu'un peu de **JavaScript**.
+              Refonte graphique du site de l'association des Amitiés
+              Judéo-Lacaunaises.
             </p>
-            <span class="tech-stack">HTML, CSS Grid, Vanilla JS, Figma</span>
+            <span class="tech-stack">HTML, CSS, JavaScript, Figma</span>
           </div>
         </div>
       </div>
@@ -188,26 +191,19 @@
             <span class="tech-tag code">HTML</span>
             <span class="tech-tag code">CSS</span>
             <span class="tech-tag code">JS</span>
-            <span class="tech-tag language">Python</span>
-            <span class="tech-tag language">Java</span>
-            <span class="tech-tag backend">SQL</span>
-            <span class="tech-tag devops">Docker</span>
-            <span class="tech-tag language">OCaml</span>
+            <span class="tech-tag language">Notion</span>
             <span class="tech-tag devops">Git</span>
-            <span class="tech-tag backend">ExpressJS</span>
             <span class="tech-tag design">Figma</span>
-            <span class="tech-tag backend">NodeJS</span>
-            <span class="tech-tag devops">npm</span>
-            <span class="tech-tag code">Typescript</span>
-            <span class="tech-tag design">WordPress</span>
+            <span class="tech-tag design">Illustrator</span>
+            <span class="tech-tag design">Photoshop</span>
           </div>
 
           <h2 class="reveal">Soft Skills</h2>
           <ul class="soft-skills-list reveal">
-            <li>Sens de l'organisation et de la rigueur</li>
-            <li>Capacité d'adaptation et d'autonomie</li>
-            <li>Bonne communication et aisance relationnelle</li>
-            <li>Langue: Français, Anglais</li>
+            <li>Aisance relationelle</li>
+            <li>Créatif</li>
+            <li>Autonome</li>
+            <li>Communicatif</li>
           </ul>
         </div>
       </div>
@@ -222,7 +218,12 @@
       <div class="me-container">
         <div class="bio-column reveal">
           <div class="bio-photo-wrapper">
-            <img src="ab.png" alt="Photo de profil" class="bio-photo" />
+            <img
+              src="IMG_8547-2.png"
+              alt="Photo de profil de Samuel Fijalkow"
+              class="bio-photo"
+              loading="lazy"
+            />
           </div>
 
           <div class="bio-content">
@@ -230,74 +231,160 @@
               Qui suis-je ?
             </h3>
             <p class="bio-quote">
-              Je m’appelle Samuel.<br>
-              Je conçois des expériences web où précision technique et sens du design vont de pair.<br>
-              <br>
-              Entre développement, Figma et inspirations venues de la mode, du basket et de la culture pop-rap, je crée des interfaces claires, vivantes et impactantes, avec une approche humaine et positive.
+              Je m’appelle Samuel.<br />
+              J'ai 20ans, j'aime créer des univers web inspirés de ce qui me
+              passionne.<br />
+              <br />
+              Mes inspirations viennent de la culture geek, de la mode, du
+              basketball et du rap. Mon objectif est de concevoir, à terme, des
+              interfaces uniques, qui vous ressemblent, en m’appuyant sur mes
+              designs, mes idées et ma vision.
             </p>
           </div>
         </div>
 
-      <div class="hobbies-column reveal">
-  
-  <div class="jumbotron-container">
-      <div class="jumbo-scene">
-          <div class="jumbo-cube">
-              <div class="jumbo-screen screen-front">
-                  <div class="screen-bg"><img src="output-onlinegiftools.gif" alt=""></div>
-                  <div class="screen-content">
-                      <h2 style="color: var(--color-yellow);">Lecture</h2>
-                      <span style="border-color: var(--color-yellow);">MANGA</span>
+        <div class="hobbies-column reveal">
+          <div class="jumbotron-container">
+            <div class="jumbo-scene">
+              <div class="jumbo-cube">
+                <div class="jumbo-screen screen-front">
+                  <div class="screen-bg">
+                    <img
+                      src="output-onlinegiftools.gif"
+                      alt=""
+                      loading="lazy"
+                    />
                   </div>
-              </div>
-              <div class="jumbo-screen screen-back">
-                  <div class="screen-bg"><img src="Tenor-unscreen.gif" alt=""></div>
                   <div class="screen-content">
-                      <h2 style="color: var(--color-pink);">POP-RAP</h2>
-                      <span style="border-color: var(--color-pink);">MUSIQUE</span>
+                    <h2 style="color: var(--color-yellow)">CONCEPT</h2>
+                    <span style="border-color: var(--color-yellow)"
+                      >CRÉATION</span
+                    >
                   </div>
-              </div>
-              <div class="jumbo-screen screen-right">
-                  <div class="screen-bg"><img src="basket.gif" alt=""></div>
+                </div>
+                <div class="jumbo-screen screen-back">
+                  <div class="screen-bg">
+                    <img src="Tenor-unscreen.gif" alt="" loading="lazy" />
+                  </div>
                   <div class="screen-content">
-                      <h2 style="color: var(--color-blue);">BASKET</h2>
-                      <span style="border-color: var(--color-blue);">SPORT</span>
+                    <h2 style="color: var(--color-pink)">POP-RAP</h2>
+                    <span style="border-color: var(--color-pink)">MUSIQUE</span>
                   </div>
-              </div>
-              <div class="jumbo-screen screen-left">
-                  <div class="screen-bg"><img src="" alt=""></div>
+                </div>
+                <div class="jumbo-screen screen-right">
+                  <div class="screen-bg">
+                    <img src="basket.gif" alt="" loading="lazy" />
+                  </div>
                   <div class="screen-content">
-                      <h2 style="color: var(--color-cyan);">HOBBIES</h2>
-                      <span style="border-color: var(--color-cyan);">PASSIONS</span>
+                    <h2 style="color: var(--color-blue)">BASKETBALL</h2>
+                    <span style="border-color: var(--color-blue)">SPORT</span>
                   </div>
+                </div>
+                <div class="jumbo-screen screen-left">
+                  <div class="screen-bg"></div>
+                  <div class="screen-content">
+                    <h2 style="color: var(--color-cyan)">IDENTITÉ</h2>
+                    <span style="border-color: var(--color-cyan)">STYLE</span>
+                  </div>
+                </div>
+
+                <div class="jumbo-lid lid-top"></div>
               </div>
-              
-              <div class="jumbo-lid lid-top"></div>
+            </div>
+
+            <div class="hologram-beam"></div>
           </div>
-      </div>
-      
-      <div class="hologram-beam"></div>
-  </div>
 
-  <div class="slider-3d-wrapper hologram-mode">
-    <div class="slider-3d-carousel">
-      <div class="slider-item item-manga">
-        <img src="Tenor-unscreen.gif" alt="Manga" />
+          <div class="slider-3d-wrapper hologram-mode">
+            <div class="slider-3d-carousel">
+              <div class="slider-item item-manga">
+                <img src="Tenor-unscreen.gif" alt="Manga" loading="lazy" />
+              </div>
+              <div class="slider-item item-basket">
+                <img src="basket.gif" alt="Basket" loading="lazy" />
+              </div>
+              <div class="slider-item item-music">
+                <img
+                  src="output-onlinegiftools.gif"
+                  alt="Musique"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="hologram-base"></div>
+          </div>
+        </div>
       </div>
-      <div class="slider-item item-basket">
-        <img src="basket.gif" alt="Basket" />
+    </section>
+
+    <section id="Crea-content" class="page-section">
+      <div class="section-title reveal">
+        <h1 style="color: var(--color-cyan)">// 04. Mes créations</h1>
+        <p>Mes créations présentes et futures</p>
       </div>
-      <div class="slider-item item-music">
-        <img src="output-onlinegiftools.gif" alt="Musique" />
+
+      <div class="creations-carousel-wrapper reveal">
+        <div class="creations-carousel" id="creationsCarousel">
+          <div class="creation-card" data-src="Bauhaus.png" data-type="image">
+            <div class="creation-image">
+              <div class="mouse-overlay"></div>
+              <img src="Bauhaus.png" alt="Bauhaus" loading="lazy" />
+            </div>
+            <div class="creation-info">
+              <h3>Poster Bauhaus</h3>
+              <p>Poster / cadre</p>
+            </div>
+          </div>
+
+          <div
+            class="creation-card"
+            data-src="Basketaffiche.webp"
+            data-type="image"
+          >
+            <div class="creation-image">
+              <div class="mouse-overlay"></div>
+              <img src="Basketaffiche.webp" alt="Basket" loading="lazy" />
+            </div>
+            <div class="creation-info">
+              <h3>Poster Basketball</h3>
+              <p>Poster/ première page de magazine.</p>
+            </div>
+          </div>
+
+          <div class="creation-card" data-src="Eau.webp" data-type="image">
+            <div class="creation-image">
+              <div class="mouse-overlay"></div>
+              <img src="Eau.webp" alt="Eau" loading="lazy" />
+            </div>
+            <div class="creation-info">
+              <h3>Poster Pub</h3>
+              <p>Affiche publicitaire</p>
+            </div>
+          </div>
+
+          <div class="creation-card" data-src="LOGOMISOUK.png" data-type="image">
+            <div class="creation-image">
+              <div class="mouse-overlay"></div>
+              <img src="LOGOMISOUK.png" alt="Logo Misouk" loading="lazy" />
+            </div>
+            <div class="creation-info">
+              <h3>Logo Misouk</h3>
+              <p>Créé pour un concours de logo</p>
+            </div>
+          </div>
+
+          <div class="creation-card" data-src="logoorigo.png" data-type="image">
+            <div class="creation-image">
+              <div class="mouse-overlay"></div>
+              <img src="logoorigo.png" alt="Logo Origo" loading="lazy" />
+            </div>
+            <div class="creation-info">
+              <h3>Logo Origo</h3>
+              <p>Créé pour un concours de logo</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="hologram-base"></div>
-  </div>
-
-</div>
-
-              
-
     </section>
 
     <section id="contact-content" class="page-section">
@@ -310,11 +397,17 @@
           >Me contacter</a
         >
         <div style="margin-top: 30px; font-size: 24px">
-          <a href="#" style="color: #333; margin: 0 10px"
-            ><i class="fab fa-linkedin"></i
+          <a
+            href="https://www.linkedin.com/in/samuel-fijalkow-8b0a653ab/"
+            style="color: #333; margin: 0 10px"
+            aria-label="Profil LinkedIn"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
           ></a>
-          <a href="https://github.com/samuelfijalkow" style="color: #333; margin: 0 10px"
-            ><i class="fab fa-github"></i
+          <a
+            href="https://github.com/samuelfijalkow"
+            style="color: #333; margin: 0 10px"
+            aria-label="Profil GitHub"
+            ><i class="fab fa-github" aria-hidden="true"></i
           ></a>
         </div>
       </div>
@@ -322,7 +415,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // 1. PARTICLES ANIMATION
         const canvas = document.getElementById("background");
         if (canvas) {
           const ctx = canvas.getContext("2d");
@@ -374,17 +466,23 @@
           }
 
           function animate() {
+            if (document.hidden) {
+              requestAnimationFrame(animate);
+              return;
+            }
             ctx.clearRect(0, 0, width, height);
             particles.forEach((p) => {
               p.update();
               p.draw();
             });
             particles.forEach((p1, i) => {
+              const maxDist = window.innerWidth < 768 ? 60 : 100;
+
               particles.slice(i + 1).forEach((p2) => {
                 const dx = p1.x - p2.x;
                 const dy = p1.y - p2.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < 100) {
+                if (dist < maxDist) {
                   ctx.beginPath();
                   ctx.strokeStyle = `rgba(0,0,0,${0.1 - dist / 1000})`;
                   ctx.lineWidth = 0.5;
@@ -399,7 +497,6 @@
           animate();
         }
 
-        // 2. SCROLL REVEAL
         const revealElements = document.querySelectorAll(".reveal");
         const revealObserver = new IntersectionObserver(
           (entries, observer) => {
@@ -413,9 +510,29 @@
             root: null,
             threshold: 0.15,
             rootMargin: "0px 0px -50px 0px",
-          }
+          },
         );
         revealElements.forEach((el) => revealObserver.observe(el));
+
+        // --- Accessibilité : Navigation au clavier pour les cartes ---
+        const cards = document.querySelectorAll('.card[onclick]');
+        cards.forEach(card => {
+          card.setAttribute('role', 'button');
+          card.setAttribute('tabindex', '0');
+          const span = card.querySelector('span');
+          if (span) {
+            card.setAttribute('aria-label', "Aller à la section " + span.textContent);
+          }
+          const icon = card.querySelector('i');
+          if (icon) icon.setAttribute('aria-hidden', 'true');
+          
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              card.click();
+            }
+          });
+        });
       });
 
       function scrollToSection(sectionId) {
@@ -424,6 +541,58 @@
           targetElement.scrollIntoView({ behavior: "smooth" });
         }
       }
+
+      function scrollCarousel(direction) {}
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.getElementById("creationsCarousel");
+        if (carousel) {
+          const content = carousel.innerHTML;
+          carousel.innerHTML = content.repeat(12);
+          setupHoverLogic();
+        }
+      });
+
+      function setupHoverLogic() {
+        const cards = document.querySelectorAll(".creation-card");
+        const overlay = document.getElementById("zoom-overlay");
+        const zoomContent = overlay.querySelector(".zoom-content");
+        let hoverTimer;
+        const DELAY_MS = 300;
+
+        cards.forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            const src = card.getAttribute("data-src");
+            const type = card.getAttribute("data-type");
+
+            if (!src) return;
+
+            if (hoverTimer) clearTimeout(hoverTimer);
+
+            hoverTimer = setTimeout(() => {
+              zoomContent.innerHTML = `<img src="${src}" style="width:100%; height:100%; object-fit:contain;" />`;
+
+              overlay.classList.add("active");
+            }, DELAY_MS);
+          });
+
+          card.addEventListener("mouseleave", () => {
+            if (hoverTimer) clearTimeout(hoverTimer);
+
+            overlay.classList.remove("active");
+
+            setTimeout(() => {
+              if (!overlay.classList.contains("active")) {
+                zoomContent.innerHTML = "";
+              }
+            }, 300);
+          });
+        });
+      }
     </script>
+
+    <div id="zoom-overlay">
+      <div class="zoom-content"></div>
+    </div>
   </body>
 </html>
