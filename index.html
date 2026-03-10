@@ -19,7 +19,7 @@
   <body>
     <canvas id="background" aria-hidden="true"></canvas>
 
-    <div class="logo">
+    <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" role="button" tabindex="0" aria-label="Retour en haut de la page" onkeydown="if(event.key==='Enter'||event.key===' ') {event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});}">
       <h1>Fijalkow</h1>
       <h2>Samuel</h2>
     </div>
@@ -413,6 +413,11 @@
       </div>
     </section>
 
+    <!-- Bouton remonter en haut -->
+    <div id="scrollToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" role="button" tabindex="0" aria-label="Remonter en haut de la page">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const canvas = document.getElementById("background");
@@ -532,6 +537,24 @@
               card.click();
             }
           });
+        });
+
+        // --- Bouton Remonter ---
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+          } else {
+            scrollToTopBtn.classList.remove("show");
+          }
+        });
+
+        scrollToTopBtn.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+          }
         });
       });
 
