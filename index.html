@@ -19,7 +19,19 @@
   <body>
     <canvas id="background" aria-hidden="true"></canvas>
 
-    <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" role="button" tabindex="0" aria-label="Retour en haut de la page" onkeydown="if(event.key==='Enter'||event.key===' ') {event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});}">
+    <div
+      class="logo"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      role="button"
+      tabindex="0"
+      aria-label="Retour en haut de la page"
+      onkeydown="
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      "
+    >
       <h1>Fijalkow</h1>
       <h2>Samuel</h2>
     </div>
@@ -362,7 +374,11 @@
             </div>
           </div>
 
-          <div class="creation-card" data-src="LOGOMISOUK.png" data-type="image">
+          <div
+            class="creation-card"
+            data-src="LOGOMISOUK.png"
+            data-type="image"
+          >
             <div class="creation-image">
               <div class="mouse-overlay"></div>
               <img src="LOGOMISOUK.png" alt="Logo Misouk" loading="lazy" />
@@ -380,6 +396,17 @@
             </div>
             <div class="creation-info">
               <h3>Logo Origo</h3>
+              <p>Créé pour un concours de logo</p>
+            </div>
+          </div>
+
+          <div class="creation-card" data-src="Parallaxe.png" data-type="image">
+            <div class="creation-image">
+              <div class="mouse-overlay"></div>
+              <img src="Parallaxe.png" alt="Logo Origo" loading="lazy" />
+            </div>
+            <div class="creation-info">
+              <h3>Logo Parallaxe</h3>
               <p>Créé pour un concours de logo</p>
             </div>
           </div>
@@ -413,8 +440,13 @@
       </div>
     </section>
 
-    <!-- Bouton remonter en haut -->
-    <div id="scrollToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" role="button" tabindex="0" aria-label="Remonter en haut de la page">
+    <div
+      id="scrollToTopBtn"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      role="button"
+      tabindex="0"
+      aria-label="Remonter en haut de la page"
+    >
       <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </div>
 
@@ -520,19 +552,22 @@
         revealElements.forEach((el) => revealObserver.observe(el));
 
         // --- Accessibilité : Navigation au clavier pour les cartes ---
-        const cards = document.querySelectorAll('.card[onclick]');
-        cards.forEach(card => {
-          card.setAttribute('role', 'button');
-          card.setAttribute('tabindex', '0');
-          const span = card.querySelector('span');
+        const cards = document.querySelectorAll(".card[onclick]");
+        cards.forEach((card) => {
+          card.setAttribute("role", "button");
+          card.setAttribute("tabindex", "0");
+          const span = card.querySelector("span");
           if (span) {
-            card.setAttribute('aria-label', "Aller à la section " + span.textContent);
+            card.setAttribute(
+              "aria-label",
+              "Aller à la section " + span.textContent,
+            );
           }
-          const icon = card.querySelector('i');
-          if (icon) icon.setAttribute('aria-hidden', 'true');
-          
-          card.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
+          const icon = card.querySelector("i");
+          if (icon) icon.setAttribute("aria-hidden", "true");
+
+          card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
               e.preventDefault();
               card.click();
             }
@@ -541,7 +576,7 @@
 
         // --- Bouton Remonter ---
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-        
+
         window.addEventListener("scroll", () => {
           if (window.scrollY > 300) {
             scrollToTopBtn.classList.add("show");
@@ -550,10 +585,10 @@
           }
         });
 
-        scrollToTopBtn.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
+        scrollToTopBtn.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
-            window.scrollTo({top: 0, behavior: 'smooth'});
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }
         });
       });
